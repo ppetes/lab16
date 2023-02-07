@@ -17,3 +17,18 @@ int main(){
 	
 	return 0;
 }
+
+void shuffle(int &a,int &b,int &c,int &d){
+int A[4] ={a,b,c,d};
+int x = rand()%4;
+int y = rand()%4;
+int t ;
+t = A[x];
+A[x] = A[y];
+A[y] = t;
+a = A[0];
+b = A[1];
+c = A[2];
+d = A[3];
+
+}
